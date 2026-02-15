@@ -8,10 +8,6 @@
 This project classifies galaxies into **STARBURST** and **STARFORMING** subclasses using spectral and photometric data from the **Sloan Digital Sky Survey (SDSS)**. We addressed class imbalance and non-linear feature relationships to build a robust binary classifier.
 
 
-
-[Image of galaxy classification types]
-
-
 ## 📂 Dataset
 - **Source:** SDSS DR17 (100,000 samples).
 - **Target:** `subclass` (Binary).
@@ -28,7 +24,7 @@ We evaluated five algorithms to find the best fit:
 
 
 
-[Image of random forest algorithm]
+
 
 
 ## 📊 Results
@@ -42,11 +38,12 @@ The **Random Forest Classifier** outperformed all other models, handling the cla
 | KNN | 85.5% | 0.849 |
 | Decision Tree | 84.9% | 0.849 |
 
-## 🖼️ Visuals
-*(Generated from the analysis)*
-- **Class Distribution:** Highlights the prevalence of "Starforming" galaxies.
-- **Redshift Distribution:** Shows distinct distance profiles for each class.
-- **Model Comparison:** Bar chart verifying Random Forest's superiority.
+## 🧰 Environment Setup
+Install the required dependencies using:
+
+```bash
+pip install -r requirements.txt
+```
 
 ## 🚀 Conclusion
 **Random Forest** is the recommended model for this task, achieving **89.5% accuracy** and high precision/recall, making it suitable for automated astronomical classification.
